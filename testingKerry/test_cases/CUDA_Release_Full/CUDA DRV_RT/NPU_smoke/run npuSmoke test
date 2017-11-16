@@ -1,0 +1,3 @@
+Note:
+1. At least two GPUs ( the same model)
+2. GP100 and later GPUs only. Please skip it for pre-Pascal GPUs.

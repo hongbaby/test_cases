@@ -1,0 +1,9 @@
+1. make sure numactl is installed on the system:
+sudo zypper/apt install -y numactl
+
+2. install simpledrvquery
+$ p4 sync //sw/qa/integrated/Tesla/manual/simpledrvquery/...
+$ cd simpledrvquery
+$ make
+
+3. Check if target GPU supports this test, the value of "Single TO Double Precision Performance ratio" should be 2 or 3.

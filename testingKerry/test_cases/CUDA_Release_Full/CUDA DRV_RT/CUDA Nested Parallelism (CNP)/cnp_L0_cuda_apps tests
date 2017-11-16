@@ -1,0 +1,9 @@
+CNP is suppoted by GPUs with SM 3.5 and above.
+
+1. 需要设置DRIVER_ROOT的变量
+export DRIVER_ROOT=/home/jeff/sw/rel/gpu_drv/rxxx/rxxx_xx
+2. go to /home/kerry/sw/rel/gpgpu/toolkit/r9.0/cuda/apps目录下
+make RELEASE=1 cnp_acos -j10
+make RELEASE=1 cnp_adaptive_mandelbrot -j10
+....
+3. 运行：perl smoke.pl -config=release --testname=xxxx

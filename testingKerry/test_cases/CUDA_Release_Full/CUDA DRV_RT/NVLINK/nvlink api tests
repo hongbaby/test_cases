@@ -1,0 +1,4 @@
+!!! usually N/A this test for below reason:!!!
+  Note:
+  1. Run tests on machines with NVLINK enabled. (i.e. DGX1, DGXstation, IBM Garrison and etc)
+  2. At least two GPUs (the same model)

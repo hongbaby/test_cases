@@ -1,0 +1,12 @@
+!!!!CBU test only apply to Volta
+
+1. cd $P4ROOT/sw/gpgpu/cuda/apps
+make sm_cbu_basic RELEASE=1
+perl smoke.pl -config=release -testname=sm_cbu_basic
+
+
+2. make cbu_stress.clean
+make cbu_stress.release
+If you want a version where you want to see some prints as the test is running to evaluate that it is not hanging, you can do
+make SHOW_HEARTBEAT=1 cbu_stress.release # or debug
+perl smoke.pl -config=release -testname=cbu_stress
